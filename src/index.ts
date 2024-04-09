@@ -81,7 +81,7 @@ async function setupViewer(){
   uiPlugin.setupPlugins<IViewerPlugin>(TonemapPlugin, CanvasSnipperPlugin)
 
   viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
- viewer.scene.activeCamera.setCameraOptions({controlsEnabled: false})
+// viewer.scene.activeCamera.setCameraOptions({controlsEnabled: false})
 
   let needsUpdate = true; // Initialize needsUpdate before any functi on is called
 
@@ -202,7 +202,7 @@ async function setupViewer(){
   const sections = document.querySelector('.container') as HTMLElement
   const mainContainer = document.getElementById('webgi-canvas-container') as HTMLElement
 	document.querySelector('.button--customize')?.addEventListener('click',() => {
-		viewer.scene.activeCamera.setCameraOptions({controlsEnabled: true})
+		//viewer.scene.activeCamera.setCameraOptions({controlsEnabled: true})
     sections.style.display = 'none'
     document.body.style.cursor= 'grab'
 		})
