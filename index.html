@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>WebGi starter</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<title>WebGi starter</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-</head>
+  <body>
+    <div class="loader">
+      <p></p>
+      <div class="progress"></div>
+    </div>
+    <nav class="nav--bar">
+      <img class="logo" src="/assets/camera.svg" />
+      <button class="button--navbar">BOOK NOW</button>
+    </nav>
+<div class ="container">
+    <section class="section first">
+      <div class="section--one--container">
+        <h1>Apollo Shoots</h1>
+        <p>Your Professional stutio in town</p>
+        <button class="button--hero">KNOW MORE</button>
+      </div>
+    </section>
 
-<body>
-	<div id="webgi-canvas-container">
-		<canvas id="webgi-canvas"></canvas>
+    <section class="section second">
+      <div class="section--two--container">
+        <h2>Professional shoots</h2>
+        <p>Book with the best in the industry</p>
+      </div>
+      <div class="custom--bg"></div>
+    </section>
+    <section class="section third">
+      <div class="section--third--container">
+        <h2>Makeup included</h2>
+        <p>Get a glowing touch before we engrave your cuteness in our lens</p>
+        <button class="button--customize">CUSTOMIZE</button>
+      </div>
+    </section>
+
+    <footer>
+      <button class="button--footer">Back to top</button>
+    </footer>
+</div>
+
+    <div id="webgi-canvas-container">
+      <canvas id="webgi-canvas"></canvas>
+      <button class="button--customize button--exit">EXIT</button>
 	</div>
 
-	<script src="src/index.ts" type="module"></script>
-</body>
-
+	<div class="customizer--container">
+		<ul class="strap--colors">
+			<li class="button--colors yellow"></li>
+			<li class="button--colors red"></li>
+			<li class="button--colors black"></li>
+		</ul>
+    </div>
+    <script src="src/index.ts" type="module"></script>
+  </body>
 </html>
